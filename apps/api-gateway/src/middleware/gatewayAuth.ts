@@ -8,9 +8,7 @@ const IDENTITY_HEADERS = [
   "x-gateway-secret",
 ] as const;
 
-// trust any headers receive from client -> BIG NO
-// B2C -> :3000/auth/me -H authrorization: Bearer <sangam-token>
-// -H -> x-user-id -> john-user-id
+
 
 function stripIdentityHeaders(req: Request) {
   for (const header of IDENTITY_HEADERS) {
