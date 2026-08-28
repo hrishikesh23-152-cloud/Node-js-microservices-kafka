@@ -75,8 +75,4 @@ export async function deleteSingleTask(
   }
 }
 
-// update task will be homework -> vv simple
-// user has to be authenticated
-// only the user that created that yask can update that task
-// user A - task A , only user A can update task A, user B can not update user A tasks
-// admin can update anyone's task
+
