@@ -42,8 +42,6 @@ export async function uploadAttachment(input: {
     uploadedBy: input.userId,
   });
 
-  // we just have to publish an event here
-  // now we have uploaded an attachment
   await publishAttachmentEvent(input.taskId, input.userId);
 
   return convertToPublicMediaAttachment(attachment);
